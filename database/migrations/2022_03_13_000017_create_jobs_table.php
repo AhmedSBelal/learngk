@@ -1,0 +1,19 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateJobsTable extends Migration
+{
+    public function up()
+    {
+        Schema::create('jobs', function (Blueprint $table) {
+            $table->id();
+            $table->string('slug')->index();
+            $table->boolean('active')->default(0)->nullable();
+            $table->unique('slug');
+            $table->timestamps();
+        });
+    }
+}

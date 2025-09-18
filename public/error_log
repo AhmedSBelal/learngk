@@ -1,0 +1,2 @@
+[16-Jan-2023 10:49:22 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.33. in /home/builrqwg/lgk-kuwait/vendor/composer/platform_check.php on line 24
+[22-Jun-2023 11:56:27 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.33. in /home/builrqwg/lgk-kuwait/vendor/composer/platform_check.php on line 24

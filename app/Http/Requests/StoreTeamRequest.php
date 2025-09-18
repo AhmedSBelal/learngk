@@ -1,0 +1,67 @@
+<?php
+
+namespace App\Http\Requests;
+
+use App\Models\Team;
+use Gate;
+use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Http\Response;
+use Illuminate\Validation\Rule;
+
+class StoreTeamRequest extends FormRequest
+{
+    public function authorize()
+    {
+        return Gate::allows('team_create');
+    }
+
+    public function rules()
+    {
+        $data = [
+            'slug' => [
+                'required',
+                Rule::unique('teams', 'slug')
+            ],
+            'image' => [
+                'required',
+            ],
+            'email' => [
+                'required',
+                'email:rfc,dns',
+            ],
+            'phone' => [
+                'string',
+                'required',
+            ],
+            'facebook' => [
+                'url',
+                'nullable',
+            ],
+            'instagram' => [
+                'url',
+                'nullable',
+            ],
+            'twitter' => [
+                'url',
+                'nullable',
+            ],
+            'linkedin' => [
+                'url',
+                'nullable',
+            ],
+        ];
+
+        foreach (siteLanguages() as $locale) {
+            $data[$locale . '.name'] = [
+                'string',
+                'required',
+            ];
+            $data[$locale . '.description'] = [
+                'required',
+                'string'
+            ];
+        }
+
+        return $data;
+    }
+}

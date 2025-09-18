@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!--woow AnimateFiles Css-->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!--bootstrap-file-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap"
+      rel="stylesheet" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>LGK</title>
+  </head>
+  <div class="modal fade" id="detailsModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content p-3">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h3 class="m-0 pop-up-main-title">تفاصيل الدورة</h3>
+          <i class="fa-regular fa-circle-xmark fa-2x hovers" data-bs-dismiss="modal"></i>
+        </div>
+        <div class="modal-body p-0">
+          <div class="row">
+            <div class="col-md-8">
+              <img src="img/course.png" class="course-pop-up-img img-fluid w-100 mb-3" alt="course-pop-up-img">
+              <div class="d-flex gap-2 mb-3">
+                <div class="rounded-pill py-2 px-3 keyword-badge">الاشهر</div>
+                <div class="rounded-pill py-2 px-3 keyword-badge">جديد</div>
+              </div>
+              <h3 class="pop-up-sub-title mb-3">اكتوبر - سبتمبر A1</h3>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <div class="d-flex gap-2 align-items-center mr-div">
+                    <img src="img/hossam.png" class="pop-up-mr-img" alt="pop-up-mr">
+                    <div>
+                      <h4 class="pop-up-mr-name m-0">حسام أمين</h4>
+                    </div>    
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <div class="d-flex gap-2 align-items-center">
+                    <i class="fa-solid fa-clock primary-color" style="font-size: 25px;"></i>
+                    <h4 class="pop-up-mr-name m-0">22 ساعة</h4>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <div class="d-flex gap-2 align-items-center">
+                    <i class="fa-solid fa-calendar-day primary-color" style="font-size: 25px;"></i>
+                    <h4 class="pop-up-mr-name m-0">04 سبتمبر 2024</h4>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <div class="d-flex gap-2 align-items-center">
+                    <i class="fa-solid fa-tag primary-color" style="font-size: 25px;"></i>
+                    <h4 class="pop-up-mr-name m-0">120 دينار</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-2 px-4">
+                <div class="col-md-4 px-0">
+                  <div class="pop-up-filter-card hovers active d-flex justify-content-center align-items-center gap-2 py-4">
+                    <i class="fa-solid fa-star"></i>
+                    <h5 class="pop-up-filter-text m-0">نظرة عامة</h5>
+                  </div>
+                </div>
+                <div class="col-md-4 px-0">
+                  <div class="pop-up-filter-card hovers d-flex justify-content-center align-items-center gap-2 py-4">
+                    <i class="fa-solid fa-book"></i>
+                    <h5 class="pop-up-filter-text m-0">المنهج الدراسي</h5>
+                  </div>
+                </div>
+                <div class="col-md-4 px-0">
+                  <div class="pop-up-filter-card hovers d-flex justify-content-center align-items-center gap-2 py-4">
+                    <i class="fa-solid fa-user"></i>
+                    <h5 class="pop-up-filter-text m-0">المُدرِّس</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="row my-3 px-4 pop-up-filter-view">
+                <div class="col-12">
+                  <h3 class="mb-2 pop-up-filter-main-title">الوصف</h3>
+                  <h4 class="mb-2 pop-up-filter-sub-title">بناءً على طلب عدد كبير من الطلاب وأولياء الأمور، بنقدملكم متطلبات الدراسة في ألمانيا لطلاب الثانوية البريطانية (IGCSE) بناءً على طلب عدد كبير من الطلاب وأولياء الأمور، بنقدملكم متطلبات الدراسة في ألمانيا لطلاب الثانوية البريطانية (IGCSE):</h4>
+                </div>
+              </div>
+              <div class="row my-3 pop-up-filter-edu d-none">
+                <div class="col-12">
+                  <div class="accordion" id="faqAccordion">
+                    <!-- Item 1 -->
+                    <div class="accordion-item mb-2 rounded-4 border">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button rounded-4 d-flex justify-content-between align-items-center collapsed"
+                          type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                          <span class="me-auto">أساسيات التحدث باللغة الألمانية</span>
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                          هنا تضع المحتوى الخاص بالبند الأول.
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <!-- Item 2 -->
+                    <div class="accordion-item mb-2 rounded-4 border">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button rounded-4 d-flex justify-content-between align-items-center collapsed"
+                          type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                          <span class="me-auto">أساسيات التحدث باللغة الألمانية</span>
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                          هنا تضع المحتوى الخاص بالبند الثانى.
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <!-- Item 3 -->
+                    <div class="accordion-item mb-2 rounded-4 border">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button rounded-4 d-flex justify-content-between align-items-center collapsed"
+                          type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                          <span class="me-auto">أساسيات التحدث باللغة الألمانية</span>
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                          هنا تضع المحتوى الخاص بالبند الثالث.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item mb-2 rounded-4 border">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button rounded-4 d-flex justify-content-between align-items-center collapsed"
+                          type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                          <span class="me-auto">أساسيات التحدث باللغة الألمانية</span>
+                        </button>
+                      </h2>
+                      <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                          هنا تضع المحتوى الخاص بالبند الرابع.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="row my-3 pop-up-filter-teacher d-none">
+                <div class="col-md-5">
+                  <div class="card bg-white rounded-4 team-card h-100">
+                    <div class="position-relative">
+                      <img src="img/Teacher.png" class="teacher-img rounded-3 w-100" alt="teacher-img">
+                    </div>
+                    <div class="card-body text-center">
+                      <h5 class="card-title why-text mb-4">حسام أمين</h5>
+                      <p class="teacher-role mb-4">معلم</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="course-information py-2 px-4 rounded-3">
+                <h3 class="pop-up-filter-main-title py-3 border-bottom m-0">معلومات الدورة</h3>
+                <div class="d-flex align-items-center gap-2 py-3 border-bottom">
+                  <i class="fa-solid fa-chart-simple primary-color"></i>
+                  <h6 class="course-information-label m-0">المستوى</h6>
+                  <h6 class="pop-up-filter-sub-title m-0">مبتدا</h6>
+                </div>
+                <div class="d-flex align-items-center gap-2 py-3 border-bottom">
+                  <i class="fa-solid fa-circle-play primary-color"></i>
+                  <h6 class="course-information-label m-0">بداية الدورة:</h6>
+                  <h6 class="pop-up-filter-sub-title m-0">04 سبتمبر</h6>
+                </div>
+                <div class="d-flex align-items-center gap-2 py-3 border-bottom">
+                  <i class="fa-solid fa-circle-pause primary-color"></i>
+                  <h6 class="course-information-label m-0">نهاية الدورة:</h6>
+                  <h6 class="pop-up-filter-sub-title m-0">18 ديسمبر</h6>
+                </div>
+                <div class="d-flex align-items-center gap-2 py-3 border-bottom">
+                  <i class="fa-solid fa-location-dot primary-color"></i>
+                  <h6 class="course-information-label m-0">نوع </h6>
+                  <h6 class="pop-up-filter-sub-title m-0">حضوري</h6>
+                </div>
+                <div class="d-flex align-items-center gap-2 py-3 border-bottom">
+                  <i class="fa-solid fa-hourglass-half primary-color"></i>
+                  <h6 class="course-information-label m-0">الأيام:</h6>
+                  <h6 class="pop-up-filter-sub-title m-0">6 اسابيع</h6>
+                </div>
+                <div class="d-flex align-items-center gap-2 py-3 border-bottom">
+                  <i class="fa-solid fa-book primary-color"></i>
+                  <h6 class="course-information-label m-0">كتاب الدورة</h6>
+                  <h6 class="pop-up-filter-sub-title m-0">18 December</h6>
+                </div>
+                <div class="d-flex align-items-center gap-2 py-3 border-bottom">
+                  <i class="fa-solid fa-pencil primary-color"></i>
+                  <h6 class="course-information-label m-0">عدد المشاركين</h6>
+                  <h6 class="pop-up-filter-sub-title m-0">30</h6>
+                </div>
+                <div class="d-flex w-100">
+                  <a
+                  href="apply-now.html"
+                  class="primary-btn w-100 text-center my-3 py-3 px-4 rounded-3 text-decoration-none"
+                  >احجز الان</a
+                >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light shadow py-md-0 py-3 sticky-top">
+      <div
+        class="fixed-share-sm sticky-top d-block d-lg-none justify-content-center w-100 py-1">
+        <div class="d-flex align-items-center justify-content-center gap-4">
+          <a href="https://www.facebook.com/share/17F5s67mxu/" target="_blank"
+            ><i class="fa-brands share-icon hovers fa-facebook-f"></i
+          ></a>
+          <a href="https://x.com/GermaninKuwait?t=ajeSW6AnQZvmg4n6xMOn4A&s=09" target="_blank"><i class="fa-brands share-icon hovers fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/hoamin?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"
+            ><i class="fa-brands share-icon hovers fa-linkedin-in"></i
+          ></a>
+          <a href="https://www.instagram.com/learn_german_in_kuwait_lgk?igsh=MWlmZzF0a3NxNHFmbw==" target="_blank"
+            ><i class="fa-brands share-icon hovers fa-instagram"></i
+          ></a>
+          <a href="https://wa.me/96551434380" target="_blank"
+            ><i class="fa-brands share-icon hovers fa-whatsapp"></i
+          ></a>
+          <a href="https://youtube.com/@germanwithhossam9695?si=YBndVu6sokcdgDez" target="_blank"><i class="fa-brands share-icon hovers fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"
+          ><img
+            src="img/lgk-logo.svg"
+            style="height: 90px; width: 100px"
+            alt="Logo"
+        /></a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars primary-color"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html"
+                >الرئيسية</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="why-lgk.html">LGK لماذا</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link active dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+                دورات اللغة الألمانية
+                <i class="fa-solid fa-chevron-down me-1"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="courses.html"
+                    >دورات لغة للبالغين</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="courses.html"
+                    >دورات التحضير للامتحانات</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="courses.html"
+                    >دورات للأطفال</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="studyDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+                الدراسة فى ألمانيا
+                <i class="fa-solid fa-chevron-down me-1"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="studyDropdown">
+                <li class="dropdown-submenu">
+                  <a
+                    class="dropdown-item dropdown-toggle"
+                    href="all-articles.html"
+                    >الدراسة فى ألمانيا
+                    <i class="fa-solid fa-chevron-right me-4"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="article-details.html"
+                        >بكالوريوس</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="article-details.html"
+                        >ماجستير</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="article-details.html"
+                        >دكتوراه</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a
+                    class="dropdown-item dropdown-toggle"
+                    href="all-articles.html"
+                    >العمل فى ألمانيا
+                    <i class="fa-solid fa-chevron-right me-4"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="article-details.html"
+                        >فرص عمل</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="article-details.html"
+                        >التدريب المهنى</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a
+                    class="dropdown-item dropdown-toggle"
+                    href="all-articles.html"
+                    >مقالات تهمك
+                    <i class="fa-solid fa-chevron-right me-4"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="article-details.html"
+                        >فرص عمل</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="article-details.html"
+                        >التدريب المهنى</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html">سؤال و جواب</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+                المعرض
+                <i class="fa-solid fa-chevron-down me-1"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="gallery.html">الصور</a></li>
+                <li>
+                  <a class="dropdown-item" href="videos.html">الفيديوهات</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">تواصل معنا</a>
+            </li>
+          </ul>
+          <form
+            class="d-flex align-items-center justify-content-lg-center ms-lg-4 gap-2">
+            <a
+              href="sign-in.html"
+              class="primary-btn text-nowrap py-2 px-4 rounded-3 text-decoration-none"
+              >تسجيل دخول</a
+            >
+            <a href="#" class="text-decoration-none lang-text"
+              ><h5 class="primary-color">En</h5></a
+            >
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <header class="second-header py-5">
+        <h1 class="second-header-title text-white text-center m-0">دورات اللغة الألمانية</h1>
+    </header>
+    <section>
+        <div class="container-fluid px-md-5">  
+            <div class="d-flex gap-4 flex-wrap my-5">
+                <div class="position-relative">
+                    <i class="fa-solid fa-caret-down position-absolute drop-down-arrow"></i>
+                    <select class="form-control select-input py-2">
+                        <option value="نوع الدورة">نوع الدورة</option>
+                    </select>    
+                </div>
+                <div class="position-relative">
+                    <i class="fa-solid fa-caret-down position-absolute drop-down-arrow"></i>
+                    <select class="form-control select-input py-2">
+                        <option value="المستوى">المستوى</option>
+                    </select>    
+                </div>
+                <div class="position-relative">
+                    <i class="fa-solid fa-caret-down position-absolute drop-down-arrow"></i>
+                    <select class="form-control select-input py-2">
+                        <option value="مكان الدورة">مكان الدورة</option>
+                    </select>    
+                </div>
+                  <div class="d-none d-lg-flex rounded-3 border bg-transparent">
+                    <div class="py-2 px-4 d-flex gap-1 cards-filter row-cards hovers border-start rounded-end-3">
+                        <div class="material-icons cards-filter-icon">sort</div>
+                        <p class="m-0 cards-filter-label">قائمة</p>
+                    </div>
+                    <div class="py-2 px-4 d-flex gap-1 cards-filter long-cards hovers rounded-start-3 active">
+                        <div class="material-icons cards-filter-icon">grid_view</div>
+                        <p class="m-0 cards-filter-label">بطاقات</p>
+                    </div>
+                  </div>
+                  <a
+                  href="search-results.html"
+                  class="primary-btn text-nowrap px-5 py-2 rounded-3 text-decoration-none"
+                  >بحث</a
+                >
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid mt-4 px-md-5">
+            <h2 class="why-main-text-2 mb-4">الدورات الحالية</h2>
+            <div class="row mt-2 cards-container">
+                <div class="col-lg-4 mb-3">
+                  <div class="card p-3 rounded-4 course-card course-information h-100">
+                    <div class="cards-long">
+                                            <img src="img/course.png" class="course-img rounded-3 w-100" alt="course-img">
+                    <div class="card-body px-0">
+                      <h5 class="card-title why-text">اكتوبر - سبتمبر A1</h5>
+                      <p class="card-text">بناءً على طلب عدد كبير من الطلاب وأولياء الأمور، بنقدملكم متطلبات الدراسة في ألمانيا لطلاب الثانوية البريطانية (IGCSE):</p>           
+                      <div class="d-flex gap-3 align-items-center mt-3 pb-4" style="border-bottom:5px solid #FDAF0433 ;">
+                        <div class="d-flex gap-2 align-items-center">
+                          <i class="fa-solid fa-calendar-days primary-color"></i>
+                          <h4 class="card-text m-0">29-يوليو</h4>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                          <i class="fa-solid fa-clock primary-color"></i>
+                          <h4 class="card-text m-0">Pm 06:00 </h4>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                          <i class="fa-solid fa-hourglass-half primary-color"></i>
+                          <h4 class="card-text m-0">10 أسابيع</h4>
+                        </div>
+                      </div>
+                      <div class="details-teacher">
+                                              <div class="d-flex gap-2 align-items-center mt-3 mr-div">
+                        <img src="img/hossam.png" class="student" alt="student">
+                        <div>
+                          <h4 class="student-name m-0">حسام أمين</h4>
+                        </div>
+                        
+                        
+                      </div>
+                      <div class="mt-3">
+                        <div class="primary-btn hovers p-2 text-center" data-bs-toggle="modal" data-bs-target="#detailsModal">التفاصيل</div>
+                      </div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-3">
+                  <div class="card p-3 rounded-4 course-card course-information h-100">
+                    <div class="cards-long">
+                                            <img src="img/course.png" class="course-img rounded-3 w-100" alt="course-img">
+                    <div class="card-body px-0">
+                      <h5 class="card-title why-text">اكتوبر - سبتمبر A1</h5>
+                      <p class="card-text">بناءً على طلب عدد كبير من الطلاب وأولياء الأمور، بنقدملكم متطلبات الدراسة في ألمانيا لطلاب الثانوية البريطانية (IGCSE):</p>           
+                      <div class="d-flex gap-3 align-items-center mt-3 pb-4" style="border-bottom:5px solid #FDAF0433 ;">
+                        <div class="d-flex gap-2 align-items-center">
+                          <i class="fa-solid fa-calendar-days primary-color"></i>
+                          <h4 class="card-text m-0">29-يوليو</h4>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                          <i class="fa-solid fa-clock primary-color"></i>
+                          <h4 class="card-text m-0">Pm 06:00 </h4>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                          <i class="fa-solid fa-hourglass-half primary-color"></i>
+                          <h4 class="card-text m-0">10 أسابيع</h4>
+                        </div>
+                      </div>
+                      <div class="details-teacher">
+                                              <div class="d-flex gap-2 align-items-center mt-3 mr-div">
+                        <img src="img/hossam.png" class="student" alt="student">
+                        <div>
+                          <h4 class="student-name m-0">حسام أمين</h4>
+                        </div>
+                        
+                        
+                      </div>
+                      <div class="mt-3">
+                        <div class="primary-btn hovers p-2 text-center" data-bs-toggle="modal" data-bs-target="#detailsModal">التفاصيل</div>
+                      </div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-3">
+                  <div class="card p-3 rounded-4 course-card course-information h-100">
+                    <div class="cards-long">
+                                            <img src="img/course.png" class="course-img rounded-3 w-100" alt="course-img">
+                    <div class="card-body px-0">
+                      <h5 class="card-title why-text">اكتوبر - سبتمبر A1</h5>
+                      <p class="card-text">بناءً على طلب عدد كبير من الطلاب وأولياء الأمور، بنقدملكم متطلبات الدراسة في ألمانيا لطلاب الثانوية البريطانية (IGCSE):</p>           
+                      <div class="d-flex gap-3 align-items-center mt-3 pb-4" style="border-bottom:5px solid #FDAF0433 ;">
+                        <div class="d-flex gap-2 align-items-center">
+                          <i class="fa-solid fa-calendar-days primary-color"></i>
+                          <h4 class="card-text m-0">29-يوليو</h4>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                          <i class="fa-solid fa-clock primary-color"></i>
+                          <h4 class="card-text m-0">Pm 06:00 </h4>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                          <i class="fa-solid fa-hourglass-half primary-color"></i>
+                          <h4 class="card-text m-0">10 أسابيع</h4>
+                        </div>
+                      </div>
+                      <div class="details-teacher">
+                                              <div class="d-flex gap-2 align-items-center mt-3 mr-div">
+                        <img src="img/hossam.png" class="student" alt="student">
+                        <div>
+                          <h4 class="student-name m-0">حسام أمين</h4>
+                        </div>
+                        
+                        
+                      </div>
+                      <div class="mt-3">
+                        <div class="primary-btn hovers p-2 text-center" data-bs-toggle="modal" data-bs-target="#detailsModal">التفاصيل</div>
+                      </div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid mt-4 px-md-5">
+            <h2 class="why-main-text-2 mb-4">الدورات القادمة</h2>
+            <div class="row mt-2 cards-container">
+                <div class="col-lg-4 mb-3">
+                  <div class="card p-3 rounded-4 course-card course-information h-100">
+                    <div class="cards-long">
+                                            <img src="img/course.png" class="course-img rounded-3 w-100" alt="course-img">
+                    <div class="card-body px-0">
+                      <h5 class="card-title why-text">اكتوبر - سبتمبر A1</h5>
+                      <p class="card-text">بناءً على طلب عدد كبير من الطلاب وأولياء الأمور، بنقدملكم متطلبات الدراسة في ألمانيا لطلاب الثانوية البريطانية (IGCSE):</p>           
+                      <div class="d-flex gap-3 align-items-center mt-3 pb-4" style="border-bottom:5px solid #FDAF0433 ;">
+                        <div class="d-flex gap-2 align-items-center">
+                          <i class="fa-solid fa-calendar-days primary-color"></i>
+                          <h4 class="card-text m-0">29-يوليو</h4>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                          <i class="fa-solid fa-clock primary-color"></i>
+                          <h4 class="card-text m-0">Pm 06:00 </h4>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                          <i class="fa-solid fa-hourglass-half primary-color"></i>
+                          <h4 class="card-text m-0">10 أسابيع</h4>
+                        </div>
+                      </div>
+                      <div class="details-teacher">
+                                              <div class="d-flex gap-2 align-items-center mt-3 mr-div">
+                        <img src="img/hossam.png" class="student" alt="student">
+                        <div>
+                          <h4 class="student-name m-0">حسام أمين</h4>
+                        </div>
+                        
+                        
+                      </div>
+                      <div class="mt-3">
+                        <div class="primary-btn hovers p-2 text-center" data-bs-toggle="modal" data-bs-target="#detailsModal">التفاصيل</div>
+                      </div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-3">
+                  <div class="card p-3 rounded-4 course-card course-information h-100">
+                    <div class="cards-long">
+                                            <img src="img/course.png" class="course-img rounded-3 w-100" alt="course-img">
+                    <div class="card-body px-0">
+                      <h5 class="card-title why-text">اكتوبر - سبتمبر A1</h5>
+                      <p class="card-text">بناءً على طلب عدد كبير من الطلاب وأولياء الأمور، بنقدملكم متطلبات الدراسة في ألمانيا لطلاب الثانوية البريطانية (IGCSE):</p>           
+                      <div class="d-flex gap-3 align-items-center mt-3 pb-4" style="border-bottom:5px solid #FDAF0433 ;">
+                        <div class="d-flex gap-2 align-items-center">
+                          <i class="fa-solid fa-calendar-days primary-color"></i>
+                          <h4 class="card-text m-0">29-يوليو</h4>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                          <i class="fa-solid fa-clock primary-color"></i>
+                          <h4 class="card-text m-0">Pm 06:00 </h4>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                          <i class="fa-solid fa-hourglass-half primary-color"></i>
+                          <h4 class="card-text m-0">10 أسابيع</h4>
+                        </div>
+                      </div>
+                      <div class="details-teacher">
+                                              <div class="d-flex gap-2 align-items-center mt-3 mr-div">
+                        <img src="img/hossam.png" class="student" alt="student">
+                        <div>
+                          <h4 class="student-name m-0">حسام أمين</h4>
+                        </div>
+                        
+                        
+                      </div>
+                      <div class="mt-3">
+                        <div class="primary-btn hovers p-2 text-center" data-bs-toggle="modal" data-bs-target="#detailsModal">التفاصيل</div>
+                      </div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-3">
+                  <div class="card p-3 rounded-4 course-card course-information h-100">
+                    <div class="cards-long">
+                                            <img src="img/course.png" class="course-img rounded-3 w-100" alt="course-img">
+                    <div class="card-body px-0">
+                      <h5 class="card-title why-text">اكتوبر - سبتمبر A1</h5>
+                      <p class="card-text">بناءً على طلب عدد كبير من الطلاب وأولياء الأمور، بنقدملكم متطلبات الدراسة في ألمانيا لطلاب الثانوية البريطانية (IGCSE):</p>           
+                      <div class="d-flex gap-3 align-items-center mt-3 pb-4" style="border-bottom:5px solid #FDAF0433 ;">
+                        <div class="d-flex gap-2 align-items-center">
+                          <i class="fa-solid fa-calendar-days primary-color"></i>
+                          <h4 class="card-text m-0">29-يوليو</h4>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                          <i class="fa-solid fa-clock primary-color"></i>
+                          <h4 class="card-text m-0">Pm 06:00 </h4>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                          <i class="fa-solid fa-hourglass-half primary-color"></i>
+                          <h4 class="card-text m-0">10 أسابيع</h4>
+                        </div>
+                      </div>
+                      <div class="details-teacher">
+                                              <div class="d-flex gap-2 align-items-center mt-3 mr-div">
+                        <img src="img/hossam.png" class="student" alt="student">
+                        <div>
+                          <h4 class="student-name m-0">حسام أمين</h4>
+                        </div>
+                        
+                        
+                      </div>
+                      <div class="mt-3">
+                        <div class="primary-btn hovers p-2 text-center" data-bs-toggle="modal" data-bs-target="#detailsModal">التفاصيل</div>
+                      </div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid my-4 px-md-5">
+            <h2 class="why-main-text-2 mb-4">جميع الدورات</h2>
+            <div class="row mt-2 cards-container">
+                <div class="col-lg-4 mb-3">
+                  <div class="card p-3 rounded-4 course-card course-information h-100">
+                    <div class="cards-long">
+                                            <img src="img/course.png" class="course-img rounded-3 w-100" alt="course-img">
+                    <div class="card-body px-0">
+                      <h5 class="card-title why-text">اكتوبر - سبتمبر A1</h5>
+                      <p class="card-text">بناءً على طلب عدد كبير من الطلاب وأولياء الأمور، بنقدملكم متطلبات الدراسة في ألمانيا لطلاب الثانوية البريطانية (IGCSE):</p>           
+                      <div class="d-flex gap-3 align-items-center mt-3 pb-4" style="border-bottom:5px solid #FDAF0433 ;">
+                        <div class="d-flex gap-2 align-items-center">
+                          <i class="fa-solid fa-calendar-days primary-color"></i>
+                          <h4 class="card-text m-0">29-يوليو</h4>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                          <i class="fa-solid fa-clock primary-color"></i>
+                          <h4 class="card-text m-0">Pm 06:00 </h4>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                          <i class="fa-solid fa-hourglass-half primary-color"></i>
+                          <h4 class="card-text m-0">10 أسابيع</h4>
+                        </div>
+                      </div>
+                      <div class="details-teacher">
+                                              <div class="d-flex gap-2 align-items-center mt-3 mr-div">
+                        <img src="img/hossam.png" class="student" alt="student">
+                        <div>
+                          <h4 class="student-name m-0">حسام أمين</h4>
+                        </div>
+                        
+                        
+                      </div>
+                      <div class="mt-3">
+                        <div class="primary-btn hovers p-2 text-center" data-bs-toggle="modal" data-bs-target="#detailsModal">التفاصيل</div>
+                      </div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-3">
+                  <div class="card p-3 rounded-4 course-card course-information h-100">
+                    <div class="cards-long">
+                                            <img src="img/course.png" class="course-img rounded-3 w-100" alt="course-img">
+                    <div class="card-body px-0">
+                      <h5 class="card-title why-text">اكتوبر - سبتمبر A1</h5>
+                      <p class="card-text">بناءً على طلب عدد كبير من الطلاب وأولياء الأمور، بنقدملكم متطلبات الدراسة في ألمانيا لطلاب الثانوية البريطانية (IGCSE):</p>           
+                      <div class="d-flex gap-3 align-items-center mt-3 pb-4" style="border-bottom:5px solid #FDAF0433 ;">
+                        <div class="d-flex gap-2 align-items-center">
+                          <i class="fa-solid fa-calendar-days primary-color"></i>
+                          <h4 class="card-text m-0">29-يوليو</h4>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                          <i class="fa-solid fa-clock primary-color"></i>
+                          <h4 class="card-text m-0">Pm 06:00 </h4>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                          <i class="fa-solid fa-hourglass-half primary-color"></i>
+                          <h4 class="card-text m-0">10 أسابيع</h4>
+                        </div>
+                      </div>
+                      <div class="details-teacher">
+                                              <div class="d-flex gap-2 align-items-center mt-3 mr-div">
+                        <img src="img/hossam.png" class="student" alt="student">
+                        <div>
+                          <h4 class="student-name m-0">حسام أمين</h4>
+                        </div>
+                        
+                        
+                      </div>
+                      <div class="mt-3">
+                        <div class="primary-btn hovers p-2 text-center" data-bs-toggle="modal" data-bs-target="#detailsModal">التفاصيل</div>
+                      </div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-3">
+                  <div class="card p-3 rounded-4 course-card course-information h-100">
+                    <div class="cards-long">
+                                            <img src="img/course.png" class="course-img rounded-3 w-100" alt="course-img">
+                    <div class="card-body px-0">
+                      <h5 class="card-title why-text">اكتوبر - سبتمبر A1</h5>
+                      <p class="card-text">بناءً على طلب عدد كبير من الطلاب وأولياء الأمور، بنقدملكم متطلبات الدراسة في ألمانيا لطلاب الثانوية البريطانية (IGCSE):</p>           
+                      <div class="d-flex gap-3 align-items-center mt-3 pb-4" style="border-bottom:5px solid #FDAF0433 ;">
+                        <div class="d-flex gap-2 align-items-center">
+                          <i class="fa-solid fa-calendar-days primary-color"></i>
+                          <h4 class="card-text m-0">29-يوليو</h4>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                          <i class="fa-solid fa-clock primary-color"></i>
+                          <h4 class="card-text m-0">Pm 06:00 </h4>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                          <i class="fa-solid fa-hourglass-half primary-color"></i>
+                          <h4 class="card-text m-0">10 أسابيع</h4>
+                        </div>
+                      </div>
+                      <div class="details-teacher">
+                                              <div class="d-flex gap-2 align-items-center mt-3 mr-div">
+                        <img src="img/hossam.png" class="student" alt="student">
+                        <div>
+                          <h4 class="student-name m-0">حسام أمين</h4>
+                        </div>
+                        
+                        
+                      </div>
+                      <div class="mt-3">
+                        <div class="primary-btn hovers p-2 text-center" data-bs-toggle="modal" data-bs-target="#detailsModal">التفاصيل</div>
+                      </div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+
+
+    <footer class="pt-5 pb-3 rounded-top-5">
+      <div class="container-fluid px-md-5">
+        <div class="row border-bottom border-2 pb-4">
+          <div class="col-md-4 mb-3">
+            <div class="d-flex flex-column align-items-center">
+              <img
+                src="img/lgk-logo.svg"
+                class="footer-logo mb-4"
+                alt="footer-logo" />
+              <h3 class="footer-main-title">
+                دورات <span style="color:#000 ;" class="fw-bold">L</span><span style="color:red ;" class="fw-bold">G</span><span class="primary-color fw-bold">K</span> هي جواز سفرك لألمانيا
+              </h3>
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-2 col-6 mb-3">
+            <div class="d-flex flex-column gap-2">
+              <h6 class="m-0">معلومات</h6>
+              <p class="m-0">
+                <a href="why-lgk.html" class="text-decoration-none"
+                  >لماذا LGK</a
+                >
+              </p>
+              <p class="m-0">
+                <a href="all-articles.html" class="text-decoration-none"
+                  >مقالات تهمك</a
+                >
+              </p>
+              <p class="m-0">
+                <a href="faq.html" class="text-decoration-none">سؤال و جواب</a>
+              </p>
+              <p class="m-0">
+                <a href="jobs.html" class="text-decoration-none"
+                  >وظائف</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="col-md-2 col-6 mb-3">
+            <div class="d-flex flex-column gap-2">
+              <h6 class="m-0">الشروط القانونية</h6>
+              <p class="m-0">
+                <a href="privacy-policy.html" class="text-decoration-none">سياسة الخصوصية</a>
+              </p>
+              <p class="m-0">
+                <a href="terms-of-service.html" class="text-decoration-none">شروط الخدمة</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-2 mb-3">
+            <div class="d-flex flex-column gap-2">
+              <h6 class="m-0">التواصل معنا</h6>
+              <p class="m-0 d-flex gap-1 align-items-center">
+                <i class="fa-solid fa-phone footer-icon"></i>
+                <a
+                  href="tel:96551434380"
+                  target="_blank"
+                  class="text-decoration-none"
+                  >96551434380+</a
+                >
+              </p>
+              <p class="m-0 d-flex gap-1 align-items-center">
+                <i class="fa-solid fa-envelope footer-icon"></i>
+                <a
+                  href="mailto:info@lgk-Kuwait.com"
+                  class="text-decoration-none"
+                  >info@lgk-Kuwait.com</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center mt-3">
+          <p class="m-0">
+            <a href="#" class="text-decoration-none copyright"
+              >Copy rights © LGK 2025</a
+            >
+          </p>
+          <div class="d-flex align-items-center gap-md-4 gap-3 ms-5 ps-4 ps-md-0">
+            <a href="https://www.instagram.com/learn_german_in_kuwait_lgk?igsh=MWlmZzF0a3NxNHFmbw==" target="_blank">
+              <i class="fa-brands fa-instagram share-icon text-white hovers"></i>
+            </a>
+            <a href="https://wa.me/96551434380" target="_blank">
+              <i class="fa-brands fa-whatsapp share-icon text-white hovers"></i>
+            </a>
+            <a href="https://x.com/GermaninKuwait?t=ajeSW6AnQZvmg4n6xMOn4A&s=09" target="_blank">
+              <i class="fa-brands fa-twitter share-icon text-white hovers"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/hoamin?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+              <i class="fa-brands fa-linkedin-in share-icon text-white hovers"></i>
+            </a>
+            <a href="https://www.facebook.com/share/17F5s67mxu/" target="_blank">
+              <i class="fa-brands fa-facebook-f share-icon text-white hovers"></i>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
