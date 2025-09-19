@@ -110,11 +110,17 @@ document.addEventListener("DOMContentLoaded", function () {
     togglePassword.classList.add(isRtl ? 'start-0' : 'end-0');
     togglePassword.classList.add(isRtl ? 'ms-3' : 'me-3');
 
-    togglePassword.addEventListener("click", function () {
+    // togglePassword.addEventListener("click", function () {
+    // //getAttribute
+    //   const type = passwordInput.type === "password" ? "text" : "password";
+    //   passwordInput.type = type;
+    //   this.textContent = type === "password" ? "visibility" : "visibility_off";
+    // });
+    togglePassword.addEventListener("click", () => {
       const type = passwordInput.getAttribute("type") === "password" ? "text" : "password";
-      passwordInput.setAttribute("type", type);
-      this.textContent = type === "password" ? "visibility" : "visibility_off";
-    });
+      passwordInput.setAttribute(type, "type");
+      togglePassword.textContent = type === "password" ? "visibility" : "visibility_off";
+  });
   }
 });
 </script>

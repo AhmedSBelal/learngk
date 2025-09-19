@@ -127,66 +127,6 @@
           <img src="{{ $sliderImages[0]->url }}" id="why-slider" class="img-fluid w-100 rounded-3 why-img" alt="why img">
         </div>
 
-
-        {{-- <div class="col-lg-7">
-          <div class="card p-4 rounded-3 primary-border why-img why-img-card our-message-card" id="message-card">
-            <h3 class="why-text mb-3">{{ trans('website.header.why') }}</h3>
-            <h2 class="why-main-text mb-4">{{ settingText('our_message', 'short_description') }}</h2>
-            <div class="d-flex gap-2 mb-3">
-              <div class="why-filter-btn our-message-btn rounded-3 p-2 hovers active" onclick="showTab('message', this)">
-                <h6 class="m-0">{{ settingText('our_message', 'text') }}</h6>
-              </div>
-              <div class="why-filter-btn our-vission-btn rounded-3 p-2 hovers" onclick="showTab('vission', this)">
-                <h6 class="m-0">{{ settingText('our_vision', 'text') }}</h6>
-              </div>
-              <div class="why-filter-btn our-goal-btn rounded-3 p-2 hovers" onclick="showTab('goal', this)">
-                <h6 class="m-0">{{ settingText('our_goal', 'text') }}</h6>
-              </div>
-            </div>
-            <div class="d-flex align-items-center gap-3 pe-3 mt-2">
-              {!! settingText('our_message', 'long_description') !!}
-            </div>
-          </div>
-
-          <div class="card p-4 rounded-3 primary-border why-img why-img-card our-vission-card d-none" id="vission-card">
-            <h3 class="why-text mb-3">{{ trans('website.header.why') }}</h3>
-            <h2 class="why-main-text mb-4">{{ settingText('our_vision', 'short_description') }}</h2>
-            <div class="d-flex gap-2 mb-3">
-              <div class="why-filter-btn our-message-btn rounded-3 p-2 hovers" onclick="showTab('message', this)">
-                <h6 class="m-0">{{ settingText('our_message', 'text') }}</h6>
-              </div>
-              <div class="why-filter-btn our-vission-btn rounded-3 p-2 hovers active" onclick="showTab('vission', this)">
-                <h6 class="m-0">{{ settingText('our_vision', 'text') }}</h6>
-              </div>
-              <div class="why-filter-btn our-goal-btn rounded-3 p-2 hovers" onclick="showTab('goal', this)">
-                <h6 class="m-0">{{ settingText('our_goal', 'text') }}</h6>
-              </div>
-            </div>
-            <div class="d-flex align-items-center gap-3 pe-3 mt-2">
-              {!! settingText('our_vision', 'long_description') !!}
-            </div>
-          </div>
-
-          <div class="card p-4 rounded-3 primary-border why-img why-img-card our-goals-card d-none" id="goal-card">
-            <h3 class="why-text mb-3">{{ trans('website.header.why') }}</h3>
-            <h2 class="why-main-text mb-4">{{ settingText('our_goal', 'short_description') }}</h2>
-            <div class="d-flex gap-2 mb-3">
-              <div class="why-filter-btn our-message-btn rounded-3 p-2 hovers" onclick="showTab('message', this)">
-                <h6 class="m-0">{{ settingText('our_message', 'text') }}</h6>
-              </div>
-              <div class="why-filter-btn our-vission-btn rounded-3 p-2 hovers" onclick="showTab('vission', this)">
-                <h6 class="m-0">{{ settingText('our_vision', 'text') }}</h6>
-              </div>
-              <div class="why-filter-btn our-goal-btn rounded-3 p-2 hovers active" onclick="showTab('goal', this)">
-                <h6 class="m-0">{{ settingText('our_goal', 'text') }}</h6>
-              </div>
-            </div>
-            <div class="d-flex align-items-center gap-3 pe-3 mt-2">
-              {!! settingText('our_goal', 'long_description') !!}
-            </div>
-          </div>
-        </div> --}}
-
         <div class="col-lg-7">
 
           <div class="card p-4 rounded-3 primary-border  why-img-card our-message-card min-height-400" id="message-card">
@@ -287,7 +227,7 @@
 
             @foreach ($reviews as $item)
               <div class="swiper-slide same-row">
-                <div class="card p-3 bg-transparent rounded-4 comments-card h-100 w-100">
+                <div class="card p-3 rounded-4 comments-card course-information h-100 w-100">
                   <img src="{{ asset('Learn-German-Kuwait/img/quote.png') }}" class="quote-img mb-md-5" alt="quote-img">
                   <div class="card-body">
                     <h5 class="card-title">{{ $item->review }}</h5>
@@ -429,12 +369,6 @@
                         <h4 class="card-text m-0">{{$course->duration}}</h4>
                       </div>
                     </div>
-                    {{-- <div class="d-flex gap-2 align-items-center mt-3 mr-div">
-                      <img src="img/hossam.png" class="student" alt="student" />
-                      <div>
-                        <h4 class="student-name m-0">حسام أمين</h4>
-                      </div>
-                    </div> --}}
                     <div class="mt-3 w-100 details-btn">
                       <div class="primary-btn hovers p-2 text-center" data-bs-toggle="modal"
                         data-bs-target="#detailsModal-{{ $course->id }}">
@@ -479,14 +413,6 @@
                         {{ $course->course_level->name }}
                       </h3>
                       <div class="row">
-                        {{-- <div class="col-md-6 mb-3">
-                          <div class="d-flex gap-2 align-items-center mr-div">
-                            <img src=" {{ asset('LGK/img/hossam.png') }}" class="pop-up-mr-img" alt="pop-up-mr">
-                            <div>
-                              <h4 class="pop-up-mr-name m-0">حسام أمين</h4>
-                            </div>
-                          </div>
-                        </div> --}}
                         <div class="col-md-6 mb-3">
                           <div class="d-flex gap-2 align-items-center">
                             <i class="fa-solid fa-clock primary-color" style="font-size: 25px;"></i>
@@ -524,22 +450,6 @@
                             <h5 class="pop-up-filter-text m-0">{{ trans('website.home.course_overview') }}</h5>
                           </div>
                         </div>
-                        {{-- <div class="col-md-4 px-0">
-                          <div class="pop-up-filter-card hovers d-flex justify-content-center align-items-center gap-2 py-4"
-                            data-target="pop-up-filter-edu-{{ $course->id }}"
-                            onclick="showModalTab(this, '{{ $course->id }}')">
-                            <i class="fa-solid fa-book"></i>
-                            <h5 class="pop-up-filter-text m-0">{{ trans('website.home.course_of_study') }}</h5>
-                          </div>
-                        </div>
-                        <div class="col-md-4 px-0">
-                          <div class="pop-up-filter-card hovers d-flex justify-content-center align-items-center gap-2 py-4"
-                            data-target="pop-up-filter-teacher-{{ $course->id }}"
-                            onclick="showModalTab(this, '{{ $course->id }}')">
-                            <i class="fa-solid fa-user"></i>
-                            <h5 class="pop-up-filter-text m-0">{{ trans('website.home.teacher') }}</h5>
-                          </div>
-                        </div> --}}
                       </div>
 
 
@@ -552,94 +462,6 @@
                           </h4>
                         </div>
                       </div>
-
-                      {{-- <!-- Curriculum Section -->
-                      <div class="row my-3 pop-up-filter-edu-{{ $course->id }} d-none">
-                        <div class="col-12">
-                          <div class="accordion" id="faqAccordion-{{ $course->id }}">
-                            <!-- Item 1 -->
-                            <div class="accordion-item mb-2 rounded-4 border">
-                              <h2 class="accordion-header">
-                                <button
-                                  class="accordion-button rounded-4 d-flex justify-content-between align-items-center collapsed"
-                                  type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne-{{ $course->id }}">
-                                  <span class="me-auto">أساسيات التحدث باللغة الألمانية</span>
-                                </button>
-                              </h2>
-                              <div id="collapseOne-{{ $course->id }}" class="accordion-collapse collapse"
-                                data-bs-parent="#faqAccordion-{{ $course->id }}">
-                                <div class="accordion-body">
-                                  هنا تضع المحتوى الخاص بالبند الأول.
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Item 2 -->
-                            <div class="accordion-item mb-2 rounded-4 border">
-                              <h2 class="accordion-header">
-                                <button
-                                  class="accordion-button rounded-4 d-flex justify-content-between align-items-center collapsed"
-                                  type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo-{{ $course->id }}">
-                                  <span class="me-auto">أساسيات التحدث باللغة الألمانية</span>
-                                </button>
-                              </h2>
-                              <div id="collapseTwo-{{ $course->id }}" class="accordion-collapse collapse"
-                                data-bs-parent="#faqAccordion-{{ $course->id }}">
-                                <div class="accordion-body">
-                                  هنا تضع المحتوى الخاص بالبند الثانى.
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Item 3 -->
-                            <div class="accordion-item mb-2 rounded-4 border">
-                              <h2 class="accordion-header">
-                                <button
-                                  class="accordion-button rounded-4 d-flex justify-content-between align-items-center collapsed"
-                                  type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree-{{ $course->id }}">
-                                  <span class="me-auto">أساسيات التحدث باللغة الألمانية</span>
-                                </button>
-                              </h2>
-                              <div id="collapseThree-{{ $course->id }}" class="accordion-collapse collapse"
-                                data-bs-parent="#faqAccordion-{{ $course->id }}">
-                                <div class="accordion-body">
-                                  هنا تضع المحتوى الخاص بالبند الثالث.
-                                </div>
-                              </div>
-                            </div>
-                            <!-- Item 4 -->
-                            <div class="accordion-item mb-2 rounded-4 border">
-                              <h2 class="accordion-header">
-                                <button
-                                  class="accordion-button rounded-4 d-flex justify-content-between align-items-center collapsed"
-                                  type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour-{{ $course->id }}">
-                                  <span class="me-auto">أساسيات التحدث باللغة الألمانية</span>
-                                </button>
-                              </h2>
-                              <div id="collapseFour-{{ $course->id }}" class="accordion-collapse collapse"
-                                data-bs-parent="#faqAccordion-{{ $course->id }}">
-                                <div class="accordion-body">
-                                  هنا تضع المحتوى الخاص بالبند الرابع.
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- Teacher Section -->
-                      <div class="row my-3 pop-up-filter-teacher-{{ $course->id }} d-none">
-                        <div class="col-md-5">
-                          <div class="card bg-white rounded-4 team-card h-100">
-                            <div class="position-relative">
-                              <img src="{{ asset('LGK/img/Teacher.png') }}" class="teacher-img rounded-3 w-100"
-                                alt="teacher-img">
-                            </div>
-                            <div class="card-body text-center">
-                              <h5 class="card-title why-text mb-4">حسام أمين</h5>
-                              <p class="teacher-role mb-4">معلم</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div> --}}
 
                     </div>
 

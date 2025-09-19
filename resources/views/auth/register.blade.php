@@ -162,7 +162,7 @@
             if (togglePassword && passwordInput) {
                 togglePassword.addEventListener("click", function () {
                     const type = passwordInput.getAttribute("type") === "password" ? "text" : "password";
-                    passwordInput.setAttribute("type", type);
+                    passwordInput.setAttribute(type, "type");
                     this.textContent = type === "password" ? "visibility" : "visibility_off";
                 });
             }
@@ -172,7 +172,7 @@
             if (toggleConfirmPassword && confirmPasswordInput) {
                 toggleConfirmPassword.addEventListener("click", function () {
                     const type = confirmPasswordInput.getAttribute("type") === "password" ? "text" : "password";
-                    confirmPasswordInput.setAttribute("type", type);
+                    confirmPasswordInput.setAttribute(type, "type");
                     this.textContent = type === "password" ? "visibility" : "visibility_off";
                 });
             }
