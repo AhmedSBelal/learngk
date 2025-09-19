@@ -126,7 +126,6 @@
     <style>
         .toggle-password {
             cursor: pointer;
-            transform: translateY(-50%);
         }
 
         [dir="rtl"] .toggle-password {

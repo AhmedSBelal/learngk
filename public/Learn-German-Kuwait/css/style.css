@@ -597,6 +597,8 @@ footer .footer-icon {
 }
 .why-lgk-img {
   width: 270px;
+  min-width: 270px;
+  max-width: 270px;
   height: 130px;
   border-radius: 16px;
 }

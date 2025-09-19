@@ -9,7 +9,7 @@
     <section>
       <div class="container-fluid">
         <div class="row py-3 align-items-center min-vh-100">
-          <div class="col-md-6 px-md-5">
+          <div class="col-md-6 px-md-5 mb-3">
             <div class="rounded-5" style="background-color:#F9F9F9 ;">
               <form action="{{ route('login') }}" method="post" class="d-flex flex-column align-items-center">
                 @csrf
